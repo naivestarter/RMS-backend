@@ -1,3 +1,29 @@
+## Docs governance (NO rule erosion)
+
+### Policy docs are LOCKED (Codex must not change unless explicitly instructed)
+- docs/CONVENTIONS.md
+- docs/BACKEND_PACKAGES.md
+- docs/TENANCY.md
+
+Rule: Codex must treat the above as immutable policy. If a task requires changing them, Codex must STOP and ask for confirmation (or the prompt must explicitly say “update policy docs”).
+
+### Living docs MUST be kept in sync with code (Codex should update automatically)
+- docs/API_MAP.md
+- docs/DOMAIN_MAP.md
+- docs/EVENT_MAP.md
+- docs/PRINTING.md
+- docs/REALTIME.md
+
+Rule: Whenever endpoints/entities/events/workflows are implemented or changed, Codex must update these living docs in the same PR.
+
+### Style rules for docs updates
+- Never weaken constraints with vague wording (e.g., “optional”, “pending”, “maybe”) unless the prompt explicitly allows it.
+- Keep headers and response envelopes consistent with docs/CONVENTIONS.md.
+- If code conflicts with docs, code must be changed to match docs (not the other way around), unless the prompt explicitly says to change docs.
+
+If Codex believes a locked policy doc must change, it must stop and output: "POLICY CHANGE REQUIRED" with a short justification and proposed diff, and do nothing else.
+
+
 # Alpine RMS – Backend Coding Standards (Laravel)
 
 > NOTE for AI assistants (Codex, etc.):  
