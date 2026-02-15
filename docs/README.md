@@ -15,3 +15,5 @@
 ## Workflow
 - DEV_WORKFLOW.md — offline Codex loop, what to run locally/CI
 - ENGINEERING_STANDARDS.md — coding standards and structure
+- SETUP_LOCAL.md — local install/publish/test commands
+- TODO_TENANT_MIGRATIONS.md — planned master vs tenant migration split
