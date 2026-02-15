@@ -101,3 +101,5 @@ Authorization order:
 Full engineering standards live in:
 - docs/ENGINEERING_STANDARDS.md
 Codex must follow them.
+
+Codex must include a ‘Compliance Checklist’ section listing whether locked docs were touched and which files changed.
