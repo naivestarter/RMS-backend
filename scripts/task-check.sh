@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-BASE_BRANCH="${1:-main}"
+BASE_BRANCH="${1:-origin/main}"
 
 echo "== Alpine RMS Task Check =="
 echo "Base branch: $BASE_BRANCH"
