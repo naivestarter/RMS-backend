@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -e
+
+LOCKED=("docs/CONVENTIONS.md" "docs/BACKEND_PACKAGES.md" "docs/TENANCY.md")
+CHANGED=$(git diff --cached --name-only -- "${LOCKED[@]}" || true)
+
+if [[ -n "$CHANGED" ]]; then
+  echo "❌ Locked policy docs are staged for commit:"
+  echo "$CHANGED"
+  echo "If you REALLY need this, commit with: git commit --no-verify"
+  exit 1
+fi
+
+echo "✅ pre-commit: locked docs not changed"
