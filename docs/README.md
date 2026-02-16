@@ -17,3 +17,6 @@
 - ENGINEERING_STANDARDS.md — coding standards and structure
 - SETUP_LOCAL.md — local install/publish/test commands
 - TODO_TENANT_MIGRATIONS.md — planned master vs tenant migration split
+
+## Scripts
+- `scripts/task-check.sh` — baseline compliance check (locked docs + optional local tests)
