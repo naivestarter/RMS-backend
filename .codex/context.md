@@ -101,3 +101,18 @@ Authorization order:
 Full engineering standards live in:
 - docs/ENGINEERING_STANDARDS.md
 Codex must follow them.
+
+Codex must include a ‘Compliance Checklist’ section listing whether locked docs were touched and which files changed.
+
+## Compliance Receipt (MANDATORY)
+Every Codex response must include:
+
+### COMPLIANCE RECEIPT
+- Task scope: (what you implemented)
+- Locked policy docs touched? (YES/NO; list files)
+- Endpoints changed/added? (YES/NO; list routes)
+- Living docs updated? (YES/NO; list docs updated)
+- New migrations added? (YES/NO; master/tenant; list filenames)
+- New packages requested? (YES/NO; list)
+- Tenancy/branch invariants impacted? (YES/NO; explain)
+
